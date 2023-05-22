@@ -1,2 +1,3 @@
 # Cesium-V
-使用Cesium制作的球面V图，及其应用
+
+- 使用Cesium开发的球面V图应用，测试阶段。
