@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <script src="test.json"></script>
+</head>
+<body>
+    <script>
+        window.onload = function () {
+            let url = './test.json';
+            let request = new XMLHttpRequest();
+            request.open('get', url);
+            request.send(null);
+            request.onload = function () {
+                if (request.status == 200){
+                    let json = JSON.parse(request.responseText);
+                    console.log(json['coords']);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
