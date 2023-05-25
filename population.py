@@ -7,6 +7,8 @@ dataset = gdal.Open('./data/landscan-global-2021-colorized.tif')
 data = dataset.ReadAsArray()
 
 
+# 文件代码还没有测试极端情况，比如在经纬度为-90，180的情况，不知道会不会溢出
+
 def get_population(coord):
     # 密度表
     density = {
