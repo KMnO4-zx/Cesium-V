@@ -267,19 +267,8 @@ class Sphere_V:
 
 
 if __name__ == '__main__':
-    v = Sphere_V(4, 5)
+    v = Sphere_V(7, 5)
     # cesium展示
     data_ = json.dumps(v.final())
-    with open('../templates/4-5.json', mode='w', encoding='utf-8') as f:
+    with open('../htmls/8-5.json', mode='w', encoding='utf-8') as f:
         f.write(data_)
-
-    # data_visited = json.dumps(v.visited_final())
-    # with open('D:\日常文件\ceium学习\src\Voronoi/visited.json', mode='w', encoding='utf-8') as f:
-    #     f.write(data_visited)
-    # data_positive_reverse = v.positive_reverse()
-    # data_attribution_algorithm = v.attribution_algorithm()
-    # print(v.counts / ((v.size - 1) ** 2))
-
-    # print(len(data_), len(data_[0]))
-    # v.paint(data_, 'test', v.test_co)
-    # v.paint_visited(v.visited, 'visited')
